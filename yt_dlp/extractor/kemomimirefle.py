@@ -12,8 +12,6 @@ from ..utils import (
 
 
 class KemomimirefleBaseIE(InfoExtractor):
-    _WEBPAGE_BASE_URL = 'https://kemomimirefle.net/'
-
     def _call_api(self, path, item_id, **kwargs):
         return self._download_json(
             f'https://api.kemomimirefle.net/fc/{path}', video_id=item_id, **kwargs)
