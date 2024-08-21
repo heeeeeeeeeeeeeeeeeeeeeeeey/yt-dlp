@@ -60,6 +60,27 @@ class KemomimirefleIE(KemomimirefleBaseIE):
             'release_timestamp': 1722610800,
             'release_date': '20240802',
         },
+    }, {
+        'url': 'https://kemomimirefle.net/live/sm6YRdgabmBQvTyBx7fcPuKZ',
+        'md5': 'ab9bd0337923d71aa6a0b93987d3557e',
+        'info_dict': {
+            'id': 'sm6YRdgabmBQvTyBx7fcPuKZ',
+            'ext': 'mp4',
+            'title': '【けもみみりふれっ！出張所】第5回♡きゃびっとによるオナサポ♡',
+            'channel': 'けもみみりふれっ！出張所',
+            'live_status': 'was_live',
+            'thumbnail': 'https://kemomimirefle.net/public_html/contents/video_pages/17079/thumbnail_path?time=1720172115',
+            'description': 'md5:037b6e1dd45d78a2a3b3fd61af01621a',
+            'timestamp': 1690815600,
+            'duration': 4010,
+            'comment_count': int,
+            'view_count': int,
+            'tags': 'count:1',
+            'upload_date': '20230731',
+            'age_limit': 15,
+            'release_timestamp': 1692709200,
+            'release_date': '20230822',
+        },
     }]
 
     def _real_extract(self, url):
