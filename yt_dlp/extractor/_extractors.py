@@ -934,6 +934,7 @@ from .kaltura import KalturaIE
 from .kankanews import KankaNewsIE
 from .karaoketv import KaraoketvIE
 from .kelbyone import KelbyOneIE
+from .kemomimirefle import KemomimirefleIE
 from .khanacademy import (
     KhanAcademyIE,
     KhanAcademyUnitIE,
