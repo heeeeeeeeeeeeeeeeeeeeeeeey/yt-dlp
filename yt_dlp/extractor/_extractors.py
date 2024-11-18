@@ -1355,6 +1355,7 @@ from .niconicochannelplus import (
     NiconicoChannelPlusChannelVideosIE,
     NiconicoChannelPlusIE,
 )
+from .nightmaresalon import NightMareSalonIE
 from .ninaprotocol import NinaProtocolIE
 from .ninecninemedia import (
     CPTwentyFourIE,
