@@ -90,7 +90,7 @@ class NightMareSalonIE(NightMareSalonBaseIE):
         fanclub_site_id = self._find_fanclub_site_id()
 
         data_json = self._call_api(
-            f'video_pages/{content_code}', item_id=content_code, headers={'Fc_use_device': 'null'},
+            f'video_pages/{content_code}', item_id=content_code, headers={'Fc_use_device': 'null', 'Fc_site_id': 618},
             note='Fetching video page info', errnote='Unable to fetch video page info',
         )['data']['video_page']
 
@@ -207,6 +207,7 @@ class NightMareSalonIE(NightMareSalonBaseIE):
             data=json.dumps(payload).encode('ascii'), headers={
                 'Content-Type': 'application/json',
                 'Fc_use_device': 'null',
+                'Fc_site_id': 618,
                 'origin': 'https://nightmare-salon.com',
             },
             note='Getting session id', errnote='Unable to get session id',
